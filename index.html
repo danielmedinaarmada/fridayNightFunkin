@@ -20,18 +20,18 @@
   <header class="header">
     <nav class="header__menu">
       <ul name="nombre" class="header__list">
-        <li class="header__item--logo">
+        <li id="logo" class="header__item--logo">
           <figure class="header__logo">
             <figcaption class="header__titulo">Friday Night Funkin</figcaption>
             <a href="." class="header_url"><img class="header__img" src="./img/FNF-Logo.png" alt="Logo Friday Night Funkin"></a>
           </figure>
         </li>
-        <li class="header__item"><a class="header__url" href="#home">Home</a></li>
-        <li class="header__item"><a class="header__url" href="#personajes">Personajes</a></li>
-        <li class="header__item"><a class="header__url" href="#argumento">Argumento</a></li>
-        <li class="header__item"><a class="header__url" href="#">Download</a></li>
-        <li class="header__item header__button"><a class="header__url" href="#">Usuario</a></li>
-        <li class="header__item header__button header__button--secondary"><a class="header__url" href="#">Registro</a></li>
+        <li id="casa" class="header__item"><a class="header__url" href="#home">Home</a></li>
+        <li id="actores" class="header__item"><a class="header__url" href="#personajes">Personajes</a></li>
+        <li id="argumentos" class="header__item"><a class="header__url" href="#argumento">Argumento</a></li>
+        <li id="download" class="header__item"><a class="header__url" href="#">Download</a></li>
+        <li id="usuario" class="header__item header__button"><a class="header__url" href="#">Usuario</a></li>
+        <li id="registro" class="header__item header__button header__button--secondary"><a class="header__url" href="#">Registro</a></li>
         <li class="header__item--toggle" id="conmutador"><img id="img" src="./img/menu.svg" alt="logo-conmutador"></li>
       </ul>
     </nav>
@@ -143,8 +143,23 @@
   <script>
     var menus = document.getElementById("conmutador");
     var img =  document.querySelector("#img");
+
+    var logo =  document.getElementById("logo")
+    var casa =  document.getElementById("casa")
+    var actores =  document.getElementById("actores")
+    var argumentos =  document.getElementById("argumentos")
+    var download =  document.getElementById("download")
+    var usuario =  document.getElementById("usuario")
+    var registro =  document.getElementById("registro")
     // console.log(img);
     menus.addEventListener("click", validarClase)
+    logo.addEventListener("click", validarClase)
+    casa.addEventListener("click", validarClase)
+    actores.addEventListener("click", validarClase)
+    argumentos.addEventListener("click", validarClase)
+    download.addEventListener("click", validarClase)
+    usuario.addEventListener("click", validarClase)
+    registro.addEventListener("click", validarClase)
     
     function validarClase(menus){
       var list = document.getElementsByName("nombre")[0].children;
