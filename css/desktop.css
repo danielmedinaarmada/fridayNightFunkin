@@ -1,0 +1,36 @@
+body {
+  width: 100rem;
+  margin: 0 auto;
+}
+
+.header__menu {
+  max-width: 90rem;
+}
+
+.header__item {
+  display: block;
+  width: auto;
+  order: 1;
+  padding: .15rem 1rem;
+}
+
+.header__item--logo {
+  order: 0;
+ }
+
+.header__button  {
+  order: 2;
+}
+
+.header__item--toggle {
+  display: none;
+}
+
+.main__logo {
+  margin-top: 10rem;
+}
+
+.main__principal {
+  display: inline;
+}
+

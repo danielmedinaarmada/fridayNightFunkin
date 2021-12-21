@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/css.css">
+</head>
+<body>
+  <nav> 
+    <ul class="menu"> 
+      <li class="logo"><a href="#">Invisible App</a></li>
+      <li class="item"><a href="#">Home</a></li>
+      <li class="item"><a href="#">About</a></li>
+      <li class="item"><a href="#">Services</a></li>
+      <li class="item"><a href="#">Features</a></li>
+      <li class="item"><a href="#">Blog</a></li>
+      <li class="item"><a href="#">Contact</a></li>
+      <li class="item button"><a href="#">Log In</a></li>
+      <li class="item button secondary"><a href="#">Sign Up</a></li>
+      <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> 
+    </ul> 
+  </nav>
+  
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+  </script>
+
+  <script>
+    $(function() { $(".toggle").on("click", function() { if ($(".item").hasClass("active")) { $(".item").removeClass("active"); $(this).find("a").html("<i class='fas fa-bars'></i>"); } else { $(".item").addClass("active"); $(this).find("a").html("<i class='fas fa-times'></i>"); } }); });
+  </script>
+
+
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true">
+    
+  </script>
+</body>
+</html>
+

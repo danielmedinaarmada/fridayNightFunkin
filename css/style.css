@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Vollkorn', serif;
+  background-color: #222;
+  color: white;
+}
+
+.header {
+  height: 10rem;
+  display: inline;
+}
+
+.header__logo {
+  height: 2rem;
+  display: flex;  
+  align-content: flex-end;
+}
+
+.header__titulo {
+  order: 2;
+  font-size: 2.5rem;
+  margin-top: auto;
+}
+
+.header__img {
+  height: 2rem;
+  order: 1;
+}
+
+.header__menu {
+  padding: 0.5rem 2rem;
+}
+
+.header__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__item {
+  font-size: 1.5rem;
+  padding: 1.5rem 0.5rem;
+  white-space: nowrap;
+  width:100%;
+  text-align: center;
+  order: 5;
+  display: none;
+}
+
+.header__item--active{
+  display: block;
+}
+
+.header__url{
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.header__url:hover{
+  text-decoration: underline;
+}
+
+.header__button {
+  font-size: 2rem;
+  order: 4;
+}
+
+.header__button:hover {
+  background-color: teal;
+  text-decoration: none;
+}
+
+
+.header__button--secondary {
+  border-bottom: 0.1rem #444 solid;
+}
+
+.header__item--toggle {
+  color:white;
+  order: 3;
+}
+
+.main {
+  margin: 2rem;
+}
+
+.main_pricipal {
+  margin: 4rem;
+}
+
+.main__title {
+  margin: 3rem;
+}
+.main__img {
+  height: 15rem;
+  display: block;
+  margin: 3rem auto;
+}
+
+.main__title { 
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.main__argumento {
+  font-size: 1.5rem;
+  display: block;
+}
+
+.main__texto {
+  margin: 2rem;
+}
+
+.main__personajes {
+  display: block;
+}
+
+.personajes {
+  width: 30rem;
+}
+
+.personaje {
+  margin: 2rem auto;
+}
+
+.personaje__title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.personaje__subtitulo{
+  text-decoration: underline;
+  padding-right: 1rem;
+}
+
+.personaje__texto {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.personaje__img {
+  border-radius: 100%;
+  border: .1rem solid white;
+  width: 15rem;
+  height: 15rem;
+  padding: 2rem;
+  display: block;
+  margin: 0 auto;
+}
