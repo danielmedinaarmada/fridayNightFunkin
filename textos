@@ -47,10 +47,18 @@ El personaje principal, Boyfriend, quiere salir con Girlfriend, pero su padre, D
 'Semana 7': Boyfriend y Girlfriend terminan en un medio de una guerra con Tankman, la mascota principal de Newgrounds (ya que su fondo aparece en el logo de la página), quien está a punto de asesinarlos, pero se arrepiente ya que según él estaba aburrido, y desafía a Boyfriend a una batalla de rap. Cuando este le gana, Tankman comienza a insultarlos, por lo que tienen otra batalla más. Al final de esta Tankman decide matar a ambos de todos modos, pero Pico llega a salvarlos en el último minuto, entonces el antagonista de esta semana tiene una batalla de canto final contra Boyfriend mientras que Pico se encarga de acabar con el ejército de Tankman. Las tres canciones de la semana son "Ugh", "Guns" y "Stress".
 
 
-logo
-casa
-actores
-argumentos
-download
-usuario
-registro
+var logo =  document.getElementById("logo")
+var casa =  document.getElementById("casa")
+var actores =  document.getElementById("actores")
+var argumentos =  document.getElementById("argumentos")
+var download =  document.getElementById("download")
+var usuario =  document.getElementById("usuario")
+var registro =  document.getElementById("registro")
+
+logo.addEventListener("click", validarClase)
+casa.addEventListener("click", validarClase)
+actores.addEventListener("click", validarClase)
+argumentos.addEventListener("click", validarClase)
+download.addEventListener("click", validarClase)
+usuario.addEventListener("click", validarClase)
+registro.addEventListener("click", validarClase)

@@ -34,3 +34,7 @@ body {
   display: inline;
 }
 
+.personajes {
+  display: flex;
+  flex-wrap: wrap;
+}
