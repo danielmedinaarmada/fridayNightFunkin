@@ -30,11 +30,10 @@ body {
   margin-top: 10rem;
 }
 
-.main__principal {
-  display: inline;
-}
-
-.personajes {
+.main__personajes {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
+
+
